@@ -297,6 +297,18 @@
         <source>Create new Vendre</source>
         <target>__Create new Vendre</target>
       </trans-unit>
+      <trans-unit id="BFGJQLC" resname="dateVente">
+        <source>dateVente</source>
+        <target>__dateVente</target>
+      </trans-unit>
+      <trans-unit id=".RY8fxJ" resname="New Ticket">
+        <source>New Ticket</source>
+        <target>__New Ticket</target>
+      </trans-unit>
+      <trans-unit id="basvwpq" resname="Create new Ticket">
+        <source>Create new Ticket</source>
+        <target>__Create new Ticket</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
