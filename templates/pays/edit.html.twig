@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{% trans %}Edit Pays{% endtrans %}
+{% endblock %}
+
+{% block body %}
+	<h1>{% trans %}Edit Pays{% endtrans %}</h1>
+
+	{{ include('pays/_form.html.twig', {'button_label': 'Update'}) }}
+
+	<a href="{{ path('app_pays_index') }}">{% trans %}back to list{% endtrans %}</a>
+
+
+{% endblock %}

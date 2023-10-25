@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{% trans %}Edit Vendre{%endtrans %}
+{% endblock %}
+
+{% block body %}
+	<h1>{% trans %}Edit Vendre{% endtrans %}</h1>
+
+	{{ include('vendre/_form.html.twig', {'button_label': 'Update'}) }}
+
+	<a href="{{ path('app_vendre_index', {'annee': annee, 'no': no} ) }}">{% trans %}back to list{% endtrans %}</a>
+
+	{# {{ include('vendre/_delete_form.html.twig') }} #}
+{% endblock %}

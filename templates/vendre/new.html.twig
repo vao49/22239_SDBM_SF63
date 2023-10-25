@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{% trans %}New Vendre{% endtrans %}
+{% endblock %}
+
+{% block body %}
+	<h1>{% trans %}Create new Vendre{% endtrans %}</h1>
+
+	{{ include('vendre/_form.html.twig') }}
+
+	<a href="{{ path('app_vendre_index', {'annee': annee, 'no': no} ) }}">{% trans %}back to list{% endtrans %}</a>
+{% endblock %}

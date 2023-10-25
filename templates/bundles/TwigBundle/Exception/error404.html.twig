@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}<h1>Erreur !!!</h1>{% endblock %}
+
+{% block body %}
+    <h2>Cette Page n'existe pas</h2>
+    <p>
+        La requete n'a pas pu aboutire. Vérififer votre URL ou bien
+         <a href="{{ path('app_main') }}"> Retour à la page d'accueil</a>
+    </p>
+   
+{% endblock %}

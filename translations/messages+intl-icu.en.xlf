@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="fr" target-language="en" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="HGMzUJ3" resname="show">
+        <source>show</source>
+        <target>__show</target>
+      </trans-unit>
+      <trans-unit id="FQn1YfJ" resname="Save">
+        <source>Save</source>
+        <target>__Save</target>
+      </trans-unit>
+      <trans-unit id="qaeCoSj" resname="Edit Article">
+        <source>Edit Article</source>
+        <target>__Edit Article</target>
+      </trans-unit>
+      <trans-unit id="U0M9PNE" resname="back to list">
+        <source>back to list</source>
+        <target>__back to list</target>
+      </trans-unit>
+      <trans-unit id="F7QsEmm" resname="Article index">
+        <source>Article index</source>
+        <target>__Article index</target>
+      </trans-unit>
+      <trans-unit id="E_MdMhQ" resname="IdArticle">
+        <source>IdArticle</source>
+        <target>__IdArticle</target>
+      </trans-unit>
+      <trans-unit id="vRPV6y0" resname="NomArticle">
+        <source>NomArticle</source>
+        <target>__NomArticle</target>
+      </trans-unit>
+      <trans-unit id="h7kEVq2" resname="PrixAchat">
+        <source>PrixAchat</source>
+        <target>__PrixAchat</target>
+      </trans-unit>
+      <trans-unit id="sQ_5Ztc" resname="Volume">
+        <source>Volume</source>
+        <target>__Volume</target>
+      </trans-unit>
+      <trans-unit id="VBQWthX" resname="Titrage">
+        <source>Titrage</source>
+        <target>__Titrage</target>
+      </trans-unit>
+      <trans-unit id="uq3fcPt" resname="Type">
+        <source>Type</source>
+        <target>__Type</target>
+      </trans-unit>
+      <trans-unit id="RVByChh" resname="Couleur">
+        <source>Couleur</source>
+        <target>__Couleur</target>
+      </trans-unit>
+      <trans-unit id="7ldFVIs" resname="Marque">
+        <source>Marque</source>
+        <target>__Marque</target>
+      </trans-unit>
+      <trans-unit id="Kw3N1AA" resname="actions">
+        <source>actions</source>
+        <target>__actions</target>
+      </trans-unit>
+      <trans-unit id="tikHS5j" resname="NC">
+        <source>NC</source>
+        <target>__NC</target>
+      </trans-unit>
+      <trans-unit id="D5lam8." resname="no records found">
+        <source>no records found</source>
+        <target>__no records found</target>
+      </trans-unit>
+      <trans-unit id="nz33U6Q" resname="Create new">
+        <source>Create new</source>
+        <target>__Create new</target>
+      </trans-unit>
+      <trans-unit id="3ikIv3b" resname="New Article">
+        <source>New Article</source>
+        <target>__New Article</target>
+      </trans-unit>
+      <trans-unit id="kZIZXY7" resname="Create new Article">
+        <source>Create new Article</source>
+        <target>__Create new Article</target>
+      </trans-unit>
+      <trans-unit id="REE8PZe" resname="Are you sure you want to delete this item?">
+        <source>Are you sure you want to delete this item?</source>
+        <target>__Are you sure you want to delete this item?</target>
+      </trans-unit>
+      <trans-unit id="4tClSWj" resname="Delete">
+        <source>Delete</source>
+        <target>__Delete</target>
+      </trans-unit>
+      <trans-unit id="zM7rVV1" resname="accueil">
+        <source>accueil</source>
+        <target>__accueil</target>
+      </trans-unit>
+      <trans-unit id="9jaI41K" resname="gestion des articles">
+        <source>gestion des articles</source>
+        <target>__gestion des articles</target>
+      </trans-unit>
+      <trans-unit id="JYyppUC" resname="gestion des tickets">
+        <source>gestion des tickets</source>
+        <target>__gestion des tickets</target>
+      </trans-unit>
+      <trans-unit id="cBS6utD" resname="Références">
+        <source>Références</source>
+        <target>__Références</target>
+      </trans-unit>
+      <trans-unit id="ct4TGa6" resname="gestion des pays">
+        <source>gestion des pays</source>
+        <target>__gestion des pays</target>
+      </trans-unit>
+      <trans-unit id="kTdg3Vj" resname="gestion des continents">
+        <source>gestion des continents</source>
+        <target>__gestion des continents</target>
+      </trans-unit>
+      <trans-unit id="fBgjK64" resname="gestion des couleurs">
+        <source>gestion des couleurs</source>
+        <target>__gestion des couleurs</target>
+      </trans-unit>
+      <trans-unit id="pQAFXY." resname="gestion des types">
+        <source>gestion des types</source>
+        <target>__gestion des types</target>
+      </trans-unit>
+      <trans-unit id="mS7ScAr" resname="gestion des fabricants">
+        <source>gestion des fabricants</source>
+        <target>__gestion des fabricants</target>
+      </trans-unit>
+      <trans-unit id="CzswNcC" resname="gestion des marques">
+        <source>gestion des marques</source>
+        <target>__gestion des marques</target>
+      </trans-unit>
+      <trans-unit id="K820qi7" resname="langues">
+        <source>langues</source>
+        <target>__langues</target>
+      </trans-unit>
+      <trans-unit id="_2LAwsK" resname="français">
+        <source>français</source>
+        <target>__français</target>
+      </trans-unit>
+      <trans-unit id="ecJi3eY" resname="anglais">
+        <source>anglais</source>
+        <target>__anglais</target>
+      </trans-unit>
+      <trans-unit id="U2gtwGk" resname="espagnol">
+        <source>espagnol</source>
+        <target>__espagnol</target>
+      </trans-unit>
+      <trans-unit id="pu261OZ" resname="Edit Continent">
+        <source>Edit Continent</source>
+        <target>__Edit Continent</target>
+      </trans-unit>
+      <trans-unit id="wcEAnT8" resname="Update">
+        <source>Update</source>
+        <target>__Update</target>
+      </trans-unit>
+      <trans-unit id="cbvQIds" resname="Liste des Continents">
+        <source>Liste des Continents</source>
+        <target>__Liste des Continents</target>
+      </trans-unit>
+      <trans-unit id="nVDikTc" resname="IdContinent">
+        <source>IdContinent</source>
+        <target>__IdContinent</target>
+      </trans-unit>
+      <trans-unit id="Ahs_Ruj" resname="NomContinent">
+        <source>NomContinent</source>
+        <target>__NomContinent</target>
+      </trans-unit>
+      <trans-unit id="bpzvooL" resname="New Continent">
+        <source>New Continent</source>
+        <target>__New Continent</target>
+      </trans-unit>
+      <trans-unit id="aBLWcFV" resname="Create new Continent">
+        <source>Create new Continent</source>
+        <target>__Create new Continent</target>
+      </trans-unit>
+      <trans-unit id="CZtZImO" resname="Continent">
+        <source>Continent</source>
+        <target>__Continent</target>
+      </trans-unit>
+      <trans-unit id="JiEhxTc" resname="edit">
+        <source>edit</source>
+        <target>__edit</target>
+      </trans-unit>
+      <trans-unit id="cAXpdK2" resname="Pays index">
+        <source>Pays index</source>
+        <target>__Pays index</target>
+      </trans-unit>
+      <trans-unit id="G6LVbUp" resname="nomArticle">
+        <source>nomArticle</source>
+        <target>__nomArticle</target>
+      </trans-unit>
+      <trans-unit id="t1H6JKT" resname="prixAchat">
+        <source>prixAchat</source>
+        <target>__prixAchat</target>
+      </trans-unit>
+      <trans-unit id="YtemsSE" resname="volume">
+        <source>volume</source>
+        <target>__volume</target>
+      </trans-unit>
+      <trans-unit id="jdWuuQ2" resname="titrage">
+        <source>titrage</source>
+        <target>__titrage</target>
+      </trans-unit>
+      <trans-unit id="SF6YmVE" resname="nomType">
+        <source>nomType</source>
+        <target>__nomType</target>
+      </trans-unit>
+      <trans-unit id="e2a7o40" resname="nomCouleur">
+        <source>nomCouleur</source>
+        <target>__nomCouleur</target>
+      </trans-unit>
+      <trans-unit id="KaU7wGn" resname="nomMarque">
+        <source>nomMarque</source>
+        <target>__nomMarque</target>
+      </trans-unit>
+      <trans-unit id="_S8D8Rx" resname="annee">
+        <source>annee</source>
+        <target>__annee</target>
+      </trans-unit>
+      <trans-unit id="zeYlg_Z" resname="numeroTicket">
+        <source>numeroTicket</source>
+        <target>__numeroTicket</target>
+      </trans-unit>
+      <trans-unit id="0hZGzxx" resname="prixVente">
+        <source>prixVente</source>
+        <target>__prixVente</target>
+      </trans-unit>
+      <trans-unit id="1exzEqS" resname="quantite">
+        <source>quantite</source>
+        <target>__quantite</target>
+      </trans-unit>
+      <trans-unit id="CrtfUSR" resname="Edit Pays">
+        <source>Edit Pays</source>
+        <target>__Edit Pays</target>
+      </trans-unit>
+      <trans-unit id="YIFBONK" resname="IdPays">
+        <source>IdPays</source>
+        <target>__IdPays</target>
+      </trans-unit>
+      <trans-unit id="oXyoWKF" resname="NomPays">
+        <source>NomPays</source>
+        <target>__NomPays</target>
+      </trans-unit>
+      <trans-unit id="j75Vu7n" resname="Ticket index">
+        <source>Ticket index</source>
+        <target>__Ticket index</target>
+      </trans-unit>
+      <trans-unit id="s2BIFax" resname="Annee">
+        <source>Annee</source>
+        <target>__Annee</target>
+      </trans-unit>
+      <trans-unit id="XAIUcWY" resname="NumeroTicket">
+        <source>NumeroTicket</source>
+        <target>__NumeroTicket</target>
+      </trans-unit>
+      <trans-unit id="j4a8CcI" resname="DateVente">
+        <source>DateVente</source>
+        <target>__DateVente</target>
+      </trans-unit>
+      <trans-unit id="MXXfdYY" resname="Détail">
+        <source>Détail</source>
+        <target>__Détail</target>
+      </trans-unit>
+      <trans-unit id="C0vHOYS" resname="Edit Vendre">
+        <source>Edit Vendre</source>
+        <target>__Edit Vendre</target>
+      </trans-unit>
+      <trans-unit id="bCrNahA" resname="Vendre index">
+        <source>Vendre index</source>
+        <target>__Vendre index</target>
+      </trans-unit>
+      <trans-unit id="r9P_B.a" resname="Détail du Ticket">
+        <source>Détail du Ticket</source>
+        <target>__Détail du Ticket</target>
+      </trans-unit>
+      <trans-unit id="LUx6acd" resname="Nouvelle Ligne">
+        <source>Nouvelle Ligne</source>
+        <target>__Nouvelle Ligne</target>
+      </trans-unit>
+      <trans-unit id="nYufdrI" resname="libelle article">
+        <source>libelle article</source>
+        <target>__libelle article</target>
+      </trans-unit>
+      <trans-unit id="Bs51NI8" resname="Quantite">
+        <source>Quantite</source>
+        <target>__Quantite</target>
+      </trans-unit>
+      <trans-unit id="uJ6QEuX" resname="PrixVente">
+        <source>PrixVente</source>
+        <target>__PrixVente</target>
+      </trans-unit>
+      <trans-unit id="q_1wUm4" resname="New Vendre">
+        <source>New Vendre</source>
+        <target>__New Vendre</target>
+      </trans-unit>
+      <trans-unit id="BLh0njP" resname="Create new Vendre">
+        <source>Create new Vendre</source>
+        <target>__Create new Vendre</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

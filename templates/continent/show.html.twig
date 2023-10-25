@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Continent
+{% endblock %}
+
+{% block body %}
+	<h1>{% trans %}Continent{% endtrans %}</h1>
+
+	<table class="table">
+		<tbody>
+			<tr>
+				<th>{% trans %}IdContinent{% endtrans %}</th>
+				<td>{{ continent.idContinent }}</td>
+			</tr>
+			<tr>
+				<th>{% trans %}NomContinent{% endtrans %}</th>
+				<td>{{ continent.nomContinent }}</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<a href="{{ path('app_continent_index') }}">{% trans %}back to list{% endtrans %}</a>
+
+	<a href="{{ path('app_continent_edit', {'idContinent': continent.idContinent}) }}">
+		{% trans %}edit{% endtrans %}</a>
+
+{% endblock %}

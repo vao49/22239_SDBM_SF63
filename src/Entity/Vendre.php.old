@@ -1,0 +1,86 @@
+<?php
+
+namespace App\Entity;
+
+use App\Repository\VendreRepository;
+use Doctrine\ORM\Mapping as ORM;
+
+#[ORM\Table(name: "vendre")]
+#[ORM\Entity(repositoryClass: VendreRepository::class)]
+class Vendre
+{
+    // #[ORM\Id]
+    // #[ORM\GeneratedValue]
+    // #[ORM\Column]
+    // private ?int $id = null;
+
+    
+    #[ORM\Column(name: "QUANTITE", nullable: true)]
+    private ?int $quantite = null;
+
+    #[ORM\Column(name: "PRIX_VENTE", nullable: true)]
+    private ?float $prixVente = null;
+
+    #[ORM\Id]
+    #[ORM\ManyToOne(inversedBy: 'vendres')]
+    #[ORM\JoinColumn(nullable: false)]
+    private ?Ticket $ticket = null;
+
+    #[ORM\Id]
+    #[ORM\ManyToOne(inversedBy: 'vendres')]
+    #[ORM\JoinColumn(nullable: false)]
+    private ?Article $article = null;
+
+    // public function getId(): ?int
+    // {
+    //     return $this->id;
+    // }
+
+    public function getQuantite(): ?int
+    {
+        return $this->quantite;
+    }
+
+    public function setQuantite(?int $quantite): static
+    {
+        $this->quantite = $quantite;
+
+        return $this;
+    }
+
+    public function getPrixVente(): ?float
+    {
+        return $this->prixVente;
+    }
+
+    public function setPrixVente(?float $prixVente): static
+    {
+        $this->prixVente = $prixVente;
+
+        return $this;
+    }
+
+    public function getTicket(): ?Ticket
+    {
+        return $this->ticket;
+    }
+
+    public function setTicket(?Ticket $ticket): static
+    {
+        $this->ticket = $ticket;
+
+        return $this;
+    }
+
+    public function getArticle(): ?Article
+    {
+        return $this->article;
+    }
+
+    public function setArticle(?Article $article): static
+    {
+        $this->article = $article;
+
+        return $this;
+    }
+}

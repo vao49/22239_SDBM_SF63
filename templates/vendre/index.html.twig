@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{% trans %}Vendre index{% endtrans %}
+{% endblock %}
+
+{% block body %}
+	<h1>{% trans %}Détail du Ticket{% endtrans %}
+		:
+		{{ annee }}
+		/
+		{{ no }}
+	</h1>
+	<a href="{{ path('app_vendre_new', {'annee': annee, 'no': no} ) }}">{% trans %}Nouvelle Ligne{% endtrans %}</a>
+	<table class="table table-dark table-hover">
+		<thead>
+			<tr>
+				<th>{% trans %}IdArticle{% endtrans %}</th>
+				<th>{% trans %}libelle article{% endtrans %}</th>
+				<th>{% trans %}Volume{% endtrans %}</th>
+				<th>{% trans %}Quantite{% endtrans %}</th>
+				<th>{% trans %}PrixVente{% endtrans %}</th>
+				{# <th>Annee</th>
+																                <th>NumeroTicket</th> #}
+				<th>{% trans %}actions{% endtrans %}</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for vendre in vendres %}
+				<tr>
+					<td>{{ vendre.idArticle.idArticle }}</td>
+					<td>{{ vendre.idArticle.nomArticle }}</td>
+					<td>{{ vendre.idArticle.volume }}
+						Cl</td>
+					<td>{{ vendre.quantite }}</td>
+					<td>{{ vendre.prixVente }}</td>
+					{# <td>{{ vendre.annee }}</td>
+																				                <td>{{ vendre.numeroTicket }}</td> #}
+					<td>
+						{# <a href="{{ path('app_vendre_show', {'idArticle': vendre.idArticle}) }}">show</a> #}
+						<a class="btn btn-secondary bi bi-pencil" href="{{ path('app_vendre_edit', {'annee': annee,'no': no,'id': vendre.idArticle.idArticle}) }}">{% trans %}edit{% endtrans %}</a>
+						{{ include('vendre/_delete_form.html.twig') }}
+					</td>
+				</tr>
+			{% else %}
+				<tr>
+					<td colspan="6">{% trans %}no records found{% endtrans %}</td>
+				</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+
+
+{% endblock %}
