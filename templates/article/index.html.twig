@@ -6,20 +6,20 @@
 
 {% block body %}
 	<h1>{% trans %}Article index{% endtrans %}</h1>
-	<a href="{{ path('app_article_new') }}">{% trans %}Create new{% endtrans %}</a>
+	<a href="{{ path('app_article_new') }}" class="btn btn-primary bi bi-plus-circle">{% trans %}Create new{% endtrans %}</a>
 	<div class="table-responsive">
-		<table class="table">
+		<table class="table table-dark table-hover">
 			<thead>
 				<tr>
-					<th>{% trans %}IdArticle{% endtrans %}</th>
-					<th>{% trans %}NomArticle{% endtrans %}</th>
-					<th>{% trans %}PrixAchat{% endtrans %}</th>
-					<th>{% trans %}Volume{% endtrans %}</th>
-					<th>{% trans %}Titrage{% endtrans %}</th>
-					<th class="d-none d-lg-table-cell">{% trans %}Type{% endtrans %}</th>
-					<th class="d-none d-md-table-cell">{% trans %}Couleur{% endtrans %}</th>
-					<th class="d-none d-lg-table-cell">{% trans %}Marque{% endtrans %}</th>
-					<th>{% trans %}actions{% endtrans %}</th>
+					<th class="text-secondary bg-info text-center">{% trans %}IdArticle{% endtrans %}</th>
+					<th class="text-secondary bg-info text-center">{% trans %}NomArticle{% endtrans %}</th>
+					<th class="text-secondary bg-info text-center">{% trans %}PrixAchat{% endtrans %}</th>
+					<th class="text-secondary bg-info text-center">{% trans %}Volume{% endtrans %}</th>
+					<th class="text-secondary bg-info text-center">{% trans %}Titrage{% endtrans %}</th>
+					<th class="d-none d-lg-table-cell text-secondary bg-info text-center">{% trans %}Type{% endtrans %}</th>
+					<th class="d-none d-md-table-cell text-secondary bg-info text-center">{% trans %}Couleur{% endtrans %}</th>
+					<th class="d-none d-lg-table-cell text-secondary bg-info text-center">{% trans %}Marque{% endtrans %}</th>
+					<th class="text-secondary bg-info text-center">{% trans %}actions{% endtrans %}</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -52,8 +52,9 @@
 							{% endif %}
 						</td>
 						<td>
-							<a href="{{ path('app_article_show', {'idArticle': article.idArticle}) }}">{% trans %}show{% endtrans %}</a>
-							<a href="{{ path('app_article_edit', {'idArticle': article.idArticle}) }}">{% trans %}edit{% endtrans %}</a>
+							{# <a href="{{ path('app_article_show', {'idArticle': article.idArticle}) }}">{% trans %}show{% endtrans %}</a> #}
+							<a href="{{ path('app_article_edit', {'idArticle': article.idArticle}) }}" class="btn btn-secondary bi bi-pencil">{% trans %}edit{% endtrans %}</a>
+							{{ include('article/_delete_form.html.twig') }}
 						</td>
 					</tr>
 				{% else %}

@@ -18,36 +18,43 @@ class ArticleType extends AbstractType
         $builder
             ->add('nomArticle', TextType::class,  [
                 'label' => new TranslatableMessage('nomArticle'),
+                'label_attr' => ['class' => 'fw-bold'],
                 'attr' => ['class' => 'form-control']
             ])
             ->add('prixAchat',NumberType::class,[
 
                 'label' => new TranslatableMessage('prixAchat'),
+                'label_attr' => ['class' => 'fw-bold'],
                 'attr' => ['class' => 'form-control']
             ])
             ->add('volume',IntegerType::class,[
 
                 'label' => new TranslatableMessage('volume'),
+                'label_attr' => ['class' => 'fw-bold'],
                 'attr' => ['class' => 'form-control']
             ])
             ->add('titrage',NumberType::class,[
 
                 'label' => new TranslatableMessage('titrage'),
+                'label_attr' => ['class' => 'fw-bold'],
                 'attr' => ['class' => 'form-control']
             ])
             ->add('idType',null,[
 
                 'label' => new TranslatableMessage('nomType'),
+                'label_attr' => ['class' => 'fw-bold'],
                 'attr' => ['class' => 'form-select']
             ])
             ->add('idCouleur',null,[
 
                 'label' => new TranslatableMessage('nomCouleur'),
+                'label_attr' => ['class' => 'fw-bold'],
                 'attr' => ['class' => 'form-select']
             ])
             ->add('idMarque',null,[
 
                 'label' => new TranslatableMessage('nomMarque'),
+                'label_attr' => ['class' => 'fw-bold'],
                 'attr' => ['class' => 'form-select']
             ])
             // ->add('annee')
