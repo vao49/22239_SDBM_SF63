@@ -309,6 +309,14 @@
         <source>Create new Ticket</source>
         <target>__Create new Ticket</target>
       </trans-unit>
+      <trans-unit id="KYPCWQE" resname="nomPays">
+        <source>nomPays</source>
+        <target>__nomPays</target>
+      </trans-unit>
+      <trans-unit id="_dKcyuc" resname="idContinent">
+        <source>idContinent</source>
+        <target>__idContinent</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
