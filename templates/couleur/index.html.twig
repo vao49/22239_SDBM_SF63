@@ -25,7 +25,7 @@
 						<td>{{ couleur.nomCouleur }}</td>
 						<td>
 							{# <a href="{{ path('app_couleur_show', {'idCouleur': couleur.idCouleur}) }}">show</a> #}
-							<a href="{{ path('app_couleur_edit', {'idCouleur': couleur.idCouleur}) }}" class="btn btn-secondary btn-sm bi bi-pencil-fill"></a>
+							<a href="{{ path('app_couleur_edit', {'idCouleur': couleur.idCouleur}) }}" class="btn btn-secondary btn-sm bi bi-pencil-fill">{% trans %}edit{% endtrans %}</a>
 							{{ include('couleur/_delete_form.html.twig') }}
 						</td>
 					</tr>
