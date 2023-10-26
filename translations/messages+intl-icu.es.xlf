@@ -317,6 +317,58 @@
         <source>idContinent</source>
         <target>__idContinent</target>
       </trans-unit>
+      <trans-unit id=".eFslrx" resname="Couleur index">
+        <source>Couleur index</source>
+        <target>__Couleur index</target>
+      </trans-unit>
+      <trans-unit id="tLbZmc2" resname="IdCouleur">
+        <source>IdCouleur</source>
+        <target>__IdCouleur</target>
+      </trans-unit>
+      <trans-unit id="cAWNDLc" resname="NomCouleur">
+        <source>NomCouleur</source>
+        <target>__NomCouleur</target>
+      </trans-unit>
+      <trans-unit id="NrYBO0o" resname="nomContinent">
+        <source>nomContinent</source>
+        <target>__nomContinent</target>
+      </trans-unit>
+      <trans-unit id="hyaOmoq" resname="Edit Couleur">
+        <source>Edit Couleur</source>
+        <target>__Edit Couleur</target>
+      </trans-unit>
+      <trans-unit id="XpL76m1" resname="New Couleur">
+        <source>New Couleur</source>
+        <target>__New Couleur</target>
+      </trans-unit>
+      <trans-unit id="UgC3b3l" resname="Create new Couleur">
+        <source>Create new Couleur</source>
+        <target>__Create new Couleur</target>
+      </trans-unit>
+      <trans-unit id="G0pnrAq" resname="Edit Typebiere">
+        <source>Edit Typebiere</source>
+        <target>__Edit Typebiere</target>
+      </trans-unit>
+      <trans-unit id="CSX27GY" resname="Typebiere index">
+        <source>Typebiere index</source>
+        <target>__Typebiere index</target>
+      </trans-unit>
+      <trans-unit id="kvzKJAU" resname="IdType">
+        <source>IdType</source>
+        <target>__IdType</target>
+      </trans-unit>
+      <trans-unit id="nWjJkVQ" resname="NomType">
+        <source>NomType</source>
+        <target>__NomType</target>
+      </trans-unit>
+      <trans-unit id="iCqz0zf" resname="New Typebiere">
+        <source>New Typebiere</source>
+        <target>__New Typebiere</target>
+      </trans-unit>
+      <trans-unit id="8cD4wvk" resname="Create new Typebiere">
+        <source>Create new Typebiere</source>
+        <target>__Create new Typebiere</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

@@ -1,16 +1,19 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{% trans %}New Continent{% endtrans %}{% endblock %}
+{% block title %}
+	{% trans %}New Continent{% endtrans %}
+{% endblock %}
 
 {% block body %}
-    <h1>{% trans %}Create new Continent{% endtrans %}</h1>
+	<h1>{% trans %}Create new Continent{% endtrans %}</h1>
 
-    {{ include('continent/_form.html.twig') }}
+	{{ include('continent/_form.html.twig') }}
 
-    <a href="{{ path('app_continent_index') }}">
-    {# {% trans %}back to list{% endtrans %} #}
-        <button class="btn btn-warning">
-            {{ button_label|default('back to list')|trans }}
-        </button>
-    </a>
+	<a
+		href="{{ path('app_continent_index') }}">
+		{# {% trans %}back to list{% endtrans %} #}
+		<button class="btn btn-warning   bi bi-arrow-up-left-square-fill">
+			{{ button_label|default('back to list')|trans }}
+		</button>
+	</a>
 {% endblock %}

@@ -1,39 +1,41 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Couleur index
+{% block title %}
+	{% trans %}Couleur index{% endtrans %}
 {% endblock %}
 
 {% block body %}
-	<h1>Couleur index</h1>
+	<h1>{% trans %}Couleur index{% endtrans %}</h1>
 
-	<a href="{{ path('app_couleur_new') }}" class="btn btn-primary">Create new</a>
+	<a href="{{ path('app_couleur_new') }}" class="btn btn-primary  bi bi-plus-circle">{% trans %}Create new{% endtrans %}</a>
 
-	<table class="table">
-		<thead>
-			<tr>
-				<th>IdCouleur</th>
-				<th>NomCouleur</th>
-				<th>actions</th>
-			</tr>
-		</thead>
-		<tbody>
-			{% for couleur in couleurs %}
-				<tr>
-					<td>{{ couleur.idCouleur }}</td>
-					<td>{{ couleur.nomCouleur }}</td>
-					<td>
-						{# <a href="{{ path('app_couleur_show', {'idCouleur': couleur.idCouleur}) }}">show</a> #}
-						<a href="{{ path('app_couleur_edit', {'idCouleur': couleur.idCouleur}) }}" class="btn btn-secondary bi bi-pencil-fill"></a>
-						{{ include('couleur/_delete_form.html.twig') }}
-					</td>
+	<div class="table-responsive">
+		<table class="table table-dark table-hover">
+			<thead>
+				<tr class="text-secondary text-center">
+					<th class="bg-info ">{% trans %}IdCouleur{% endtrans %}</th>
+					<th class="bg-info ">{% trans %}NomCouleur{% endtrans %}</th>
+					<th class="bg-info ">{% trans %}actions{% endtrans %}</th>
 				</tr>
-			{% else %}
-				<tr>
-					<td colspan="3">no records found</td>
-				</tr>
-			{% endfor %}
-		</tbody>
-	</table>
+			</thead>
+			<tbody>
+				{% for couleur in couleurs %}
+					<tr class="text-center">
+						<td>{{ couleur.idCouleur }}</td>
+						<td>{{ couleur.nomCouleur }}</td>
+						<td>
+							{# <a href="{{ path('app_couleur_show', {'idCouleur': couleur.idCouleur}) }}">show</a> #}
+							<a href="{{ path('app_couleur_edit', {'idCouleur': couleur.idCouleur}) }}" class="btn btn-secondary btn-sm bi bi-pencil-fill"></a>
+							{{ include('couleur/_delete_form.html.twig') }}
+						</td>
+					</tr>
+				{% else %}
+					<tr>
+						<td colspan="3">{% trans %}no records found{% endtrans %}</td>
+					</tr>
+				{% endfor %}
+			</tbody>
+		</table>
 
-
+	</div>
 {% endblock %}
