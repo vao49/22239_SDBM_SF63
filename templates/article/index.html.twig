@@ -54,7 +54,7 @@
 						<td
 							class="text-center">
 							{# <a href="{{ path('app_article_show', {'idArticle': article.idArticle}) }}">{% trans %}show{% endtrans %}</a> #}
-							<a href="{{ path('app_article_edit', {'idArticle': article.idArticle}) }}" class="btn btn-secondary bi bi-pencil">{% trans %}edit{% endtrans %}</a>
+							<a href="{{ path('app_article_edit', {'idArticle': article.idArticle}) }}" class="btn btn-secondary btn-sm bi bi-pencil">{% trans %}edit{% endtrans %}</a>
 							{{ include('article/_delete_form.html.twig') }}
 						</td>
 					</tr>
