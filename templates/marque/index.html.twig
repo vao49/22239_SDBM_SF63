@@ -11,8 +11,8 @@
 			<tr>
 				<th>IdMarque</th>
 				<th>NomMarque</th>
-				{# <th>NomPays</th>
-								<th>NomFabricant</th> #}
+				<th>NomPays</th>
+				<th>NomFabricant</th>
 				<th>actions</th>
 			</tr>
 		</thead>
@@ -21,20 +21,20 @@
 				<tr>
 					<td>{{ marque.idMarque }}</td>
 					<td>{{ marque.nomMarque }}</td>
-					{# <td>
-																{% if marque.idPays == null %}
-																	{% trans %}NC{% endtrans %}
-																{% else %}
-																	{{ marque.idPays.nomPays }}
-																{% endif %}
-															</td> #}
-					{# <td>
-																{% if marque.idFabricant == null %}
-																	{% trans %}NC{% endtrans %}
-																{% else %}
-																	{{ marque.idFabricant.nomFabricant }}
-																{% endif %}
-															</td> #}
+					<td>
+						{% if marque.idPays == null %}
+							{% trans %}NC{% endtrans %}
+						{% else %}
+							{{ marque.idPays.nomPays }}
+						{% endif %}
+					</td>
+					<td>
+						{% if marque.idFabricant == null %}
+							{% trans %}NC{% endtrans %}
+						{% else %}
+							{{ marque.idFabricant.nomFabricant }}
+						{% endif %}
+					</td>
 					<td>
 						<a href="{{ path('app_marque_show', {'idMarque': marque.idMarque}) }}">show</a>
 						<a href="{{ path('app_marque_edit', {'idMarque': marque.idMarque}) }}">edit</a>

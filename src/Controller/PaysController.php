@@ -18,7 +18,9 @@ class PaysController extends AbstractController
     {
         $pays = $entityManager
             ->getRepository(Pays::class)
-            ->findAll();
+            // ->findAll();
+            ->findBy([],
+              ['nomPays' => 'ASC']);
 
         return $this->render('pays/index.html.twig', [
             'pays' => $pays,

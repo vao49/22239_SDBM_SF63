@@ -7,7 +7,7 @@
 {% block body %}
 	<h1>{% trans %}Liste des Continents{% endtrans %}</h1>
 	<a href="{{ path('app_continent_new') }}">
-		<button class="btn btn-primary bi bi-plus-circle">
+		<button class="btn btn-primary {% trans %}icon new{% endtrans %}">
 			{{ button_label|default('Create new')|trans }}
 		</button>
 	</a>
@@ -27,13 +27,13 @@
 						<td>{{ continent.nomContinent }}</td>
 						<td>
 							{# <a
-																						href="{{ path('app_continent_show', {'idContinent': continent.idContinent}) }}">
-																						<button class="btn btn-warning">
-																							{{ button_label|default('show')|trans }}
-																						</button>
-																					</a> #}
+																																				href="{{ path('app_continent_show', {'idContinent': continent.idContinent}) }}">
+																																				<button class="btn btn-warning">
+																																					{{ button_label|default('show')|trans }}
+																																				</button>
+																																			</a> #}
 							<a href="{{ path('app_continent_edit', {'idContinent': continent.idContinent}) }}">
-								<button class="btn btn-secondary btn-sm bi bi-pencil">
+								<button class="btn btn-secondary {% trans %}icon edit{% endtrans %}">
 									{{ button_label|default('edit')|trans }}
 								</button>
 							</a>

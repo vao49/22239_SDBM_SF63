@@ -9,5 +9,5 @@
 
 	{{ include('article/_form.html.twig') }}
 
-	<a href="{{ path('app_article_index') }}" class="btn btn-warning  bi bi-arrow-up-left-square-fill">{% trans %}back to list{% endtrans %}</a>
+	<a href="{{ path('app_article_index') }}" class="btn btn-warning  {% trans %}icon back{% endtrans %}">{% trans %}back to list{% endtrans %}</a>
 {% endblock %}

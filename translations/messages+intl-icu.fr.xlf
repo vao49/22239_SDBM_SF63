@@ -369,6 +369,22 @@
         <source>Create new Typebiere</source>
         <target>__Create new Typebiere</target>
       </trans-unit>
+      <trans-unit id="cdoppPu" resname="icon new">
+        <source>icon new</source>
+        <target>bi bi-plus-square</target>
+      </trans-unit>
+      <trans-unit id="ZCmY8L4" resname="icon edit">
+        <source>icon edit</source>
+        <target>bi bi-pencil-square</target>
+      </trans-unit>
+      <trans-unit id="Sp7iUSD" resname="icon delete">
+        <source>icon delete</source>
+        <target> bi bi-trash3-fill </target>
+      </trans-unit>
+      <trans-unit id="VYuhcu_" resname="icon back">
+        <source>icon back</source>
+        <target>bi bi-arrow-up-square-fill </target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
