@@ -35,6 +35,14 @@ class TicketController extends AbstractController
     public function new(Request $request, EntityManagerInterface $entityManager): Response
     {
         $ticket = new Ticket();
+        $annee = date("Y");
+        $ticket->setAnnee($annee); // Par défaut l'année en cours
+        $no = $entityManager
+        ->getRepository(Ticket::class)
+        ->findNextNumber($annee); // Retourne le N° du TICKET dans l'année
+
+        $ticket->setnumeroTicket($no);
+
         $form = $this->createForm(TicketType::class, $ticket);
         $form->handleRequest($request);
 

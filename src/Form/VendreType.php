@@ -17,22 +17,30 @@ class VendreType extends AbstractType
         $builder
             ->add('annee', IntegerType::class, [
                 'label' => new TranslatableMessage('annee'),
+                'label_attr' => ['class' => 'fw-bold'],
+                'attr' => ['class' => 'form-control' ,
+                'readonly' => 'true']
             ])
             ->add('numeroTicket', IntegerType::class,[
-
                 'label' => new TranslatableMessage('numeroTicket'),
+                'label_attr' => ['class' => 'fw-bold'],
+                'attr' => ['class' => 'form-control',
+                'readonly' => 'true']
             ])
             ->add('idArticle', null,[
-
-                'label' => new TranslatableMessage('nomArticle'),
+                'label' => new TranslatableMessage('idArticle'),
+                'label_attr' => ['class' => 'fw-bold'],
+                'attr' => ['class' => 'form-control']
             ])
             ->add('prixVente',NumberType::class,[
-
                 'label' => new TranslatableMessage('prixVente'),
+                'label_attr' => ['class' => 'fw-bold'],
+                'attr' => ['class' => 'form-control']
             ])
             ->add('quantite',IntegerType::class,[
-
                 'label' => new TranslatableMessage('quantite'),
+                'label_attr' => ['class' => 'fw-bold'],
+                'attr' => ['class' => 'form-control']
             ])
 
 

@@ -385,6 +385,14 @@
         <source>icon back</source>
         <target>bi bi-arrow-up-square-fill </target>
       </trans-unit>
+      <trans-unit id="dP5ctFl" resname="icon detail">
+        <source>icon detail</source>
+        <target>bi bi-ticket-detailed-fill  </target>
+      </trans-unit>
+      <trans-unit id="c7.OjVn" resname="idArticle">
+        <source>idArticle</source>
+        <target>__idArticle</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

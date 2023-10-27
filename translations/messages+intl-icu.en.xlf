@@ -369,7 +369,7 @@
         <source>Create new Typebiere</source>
         <target>__Create new Typebiere</target>
       </trans-unit>
-    <trans-unit id="cdoppPu" resname="icon new">
+      <trans-unit id="cdoppPu" resname="icon new">
         <source>icon new</source>
         <target>bi bi-plus-square</target>
       </trans-unit>
@@ -384,6 +384,14 @@
       <trans-unit id="VYuhcu_" resname="icon back">
         <source>icon back</source>
         <target>bi bi-arrow-up-square-fill </target>
+      </trans-unit>
+      <trans-unit id="dP5ctFl" resname="icon detail">
+        <source>icon detail</source>
+        <target>bi bi-ticket-detailed-fill</target>
+      </trans-unit>
+      <trans-unit id="c7.OjVn" resname="idArticle">
+        <source>idArticle</source>
+        <target>__idArticle</target>
       </trans-unit>
     </body>
   </file>

@@ -1,4 +1,4 @@
-<form class="d-inline" method="post" action="{{ path('app_vendre_delete', {'annee': annee,'no': no,'id': vendre.idArticle.idArticle}) }}" onsubmit="return confirm('Are you sure you want to delete this item?');">
+<form class="d-inline" method="post" action="{{ path('app_vendre_delete', {'annee': annee,'no': no,'id': vendre.idArticle.idArticle}) }}" onsubmit="return confirm('{% trans %}Are you sure you want to delete this item?{% endtrans %}');">
 	<input type="hidden" name="_token" value="{{ csrf_token('delete' ~ vendre.idArticle) }}">
-	<button class="btn btn-danger bi bi-trash">{% trans %}Delete{% endtrans %}</button>
+	<button class="btn btn-danger  btn-sm {% trans %}icon delete{% endtrans %}">{% trans %}Delete{% endtrans %}</button>
 </form>
