@@ -1,52 +1,55 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Marque index
+{% block title %}
+	{% trans %}Marque index{% endtrans %}
 {% endblock %}
 
 {% block body %}
-	<h1>Marque index</h1>
-
-	<table class="table">
-		<thead>
-			<tr>
-				<th>IdMarque</th>
-				<th>NomMarque</th>
-				<th>NomPays</th>
-				<th>NomFabricant</th>
-				<th>actions</th>
-			</tr>
-		</thead>
-		<tbody>
-			{% for marque in marques %}
+	<h1>{% trans %}Marque index{% endtrans %}</h1>
+	<a href="{{ path('app_marque_new') }}" class="btn btn-primary {% trans %}icon new{% endtrans %}">{% trans %}Create new{% endtrans %}</a>
+	<div class="table-responsive">
+		<table class="table table-dark table-hover">
+			<thead>
 				<tr>
-					<td>{{ marque.idMarque }}</td>
-					<td>{{ marque.nomMarque }}</td>
-					<td>
-						{% if marque.idPays == null %}
-							{% trans %}NC{% endtrans %}
-						{% else %}
-							{{ marque.idPays.nomPays }}
-						{% endif %}
-					</td>
-					<td>
-						{% if marque.idFabricant == null %}
-							{% trans %}NC{% endtrans %}
-						{% else %}
-							{{ marque.idFabricant.nomFabricant }}
-						{% endif %}
-					</td>
-					<td>
-						<a href="{{ path('app_marque_show', {'idMarque': marque.idMarque}) }}">show</a>
-						<a href="{{ path('app_marque_edit', {'idMarque': marque.idMarque}) }}">edit</a>
-					</td>
+					<th class="text-secondary bg-info text-center">{% trans %}IdMarque{% endtrans %}</th>
+					<th class="text-secondary bg-info text-center">{% trans %}NomMarque{% endtrans %}</th>
+					<th class="text-secondary bg-info text-center">{% trans %}NomPays{% endtrans %}</th>
+					<th class="text-secondary bg-info text-center">{% trans %}NomFabricant{% endtrans %}</th>
+					<th class="text-secondary bg-info text-center">{% trans %}actions{% endtrans %}</th>
 				</tr>
-			{% else %}
-				<tr>
-					<td colspan="3">no records found</td>
-				</tr>
-			{% endfor %}
-		</tbody>
-	</table>
+			</thead>
+			<tbody>
+				{% for marque in marques %}
+					<tr class="text-center">
+						<td>{{ marque.idMarque }}</td>
+						<td>{{ marque.nomMarque }}</td>
+						<td>
+							{% if marque.idPays == null %}
+								{% trans %}NC{% endtrans %}
+							{% else %}
+								{{ marque.idPays.nomPays }}
+							{% endif %}
+						</td>
+						<td>
+							{% if marque.idFabricant == null %}
+								{% trans %}NC{% endtrans %}
+							{% else %}
+								{{ marque.idFabricant.nomFabricant }}
+							{% endif %}
+						</td>
+						<td>
+							{# <a href="{{ path('app_marque_show', {'idMarque': marque.idMarque}) }}">show</a> #}
+							<a href="{{ path('app_marque_edit', {'idMarque': marque.idMarque}) }}" class="btn btn-secondary btn-sm {% trans %}icon edit{% endtrans %}">{% trans %}edit{% endtrans %}</a>
+							{{ include('marque/_delete_form.html.twig') }}
+						</td>
+					</tr>
+				{% else %}
+					<tr>
+						<td colspan="3">no records found</td>
+					</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+	</div>
 
-	<a href="{{ path('app_marque_new') }}">Create new</a>
 {% endblock %}

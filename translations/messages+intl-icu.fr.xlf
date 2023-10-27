@@ -393,6 +393,58 @@
         <source>idArticle</source>
         <target>__idArticle</target>
       </trans-unit>
+      <trans-unit id="FgA9Xq9" resname="nomFabricant">
+        <source>nomFabricant</source>
+        <target>__nomFabricant</target>
+      </trans-unit>
+      <trans-unit id="274oqxY" resname="idFabricant">
+        <source>idFabricant</source>
+        <target>__idFabricant</target>
+      </trans-unit>
+      <trans-unit id="AUM7rGR" resname="idPays">
+        <source>idPays</source>
+        <target>__idPays</target>
+      </trans-unit>
+      <trans-unit id="yQ87f68" resname="Edit Marque">
+        <source>Edit Marque</source>
+        <target>__Edit Marque</target>
+      </trans-unit>
+      <trans-unit id="bhJpRHH" resname="Marque index">
+        <source>Marque index</source>
+        <target>__Marque index</target>
+      </trans-unit>
+      <trans-unit id="nc5Ii9c" resname="IdMarque">
+        <source>IdMarque</source>
+        <target>__IdMarque</target>
+      </trans-unit>
+      <trans-unit id="hmfSQrH" resname="NomMarque">
+        <source>NomMarque</source>
+        <target>__NomMarque</target>
+      </trans-unit>
+      <trans-unit id="v2oslAm" resname="NomFabricant">
+        <source>NomFabricant</source>
+        <target>__NomFabricant</target>
+      </trans-unit>
+      <trans-unit id="jBVt6zJ" resname="New Marque">
+        <source>New Marque</source>
+        <target>__New Marque</target>
+      </trans-unit>
+      <trans-unit id="au6uDL_" resname="&gt;Create new Marque">
+        <source>&gt;Create new Marque</source>
+        <target><![CDATA[__>Create new Marque]]></target>
+      </trans-unit>
+      <trans-unit id="Rw0YMcW" resname="New Pays">
+        <source>New Pays</source>
+        <target>__New Pays</target>
+      </trans-unit>
+      <trans-unit id="I9gI.Tu" resname="Create new Pays">
+        <source>Create new Pays</source>
+        <target>__Create new Pays</target>
+      </trans-unit>
+      <trans-unit id="sXlVxH6" resname="Create new Marque">
+        <source>Create new Marque</source>
+        <target>__Create new Marque</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
